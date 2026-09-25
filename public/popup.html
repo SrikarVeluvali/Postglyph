@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Postglyph</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="brand"><span class="mark">◈</span><span>Postglyph</span></div>
+      <p class="lede">Know what each post is for.</p>
+      <label class="toggle-row" for="enabled">
+        <span>Classify posts</span>
+        <input id="enabled" type="checkbox" />
+      </label>
+      <label class="field" for="token">Local helper token</label>
+      <input id="token" type="password" autocomplete="off" placeholder="Paste token shown by helper" />
+      <button id="save" type="button">Save token</button>
+      <p id="status" role="status">Checking helper…</p>
+      <p id="page-status" role="status">Checking LinkedIn tab…</p>
+      <p class="note">Visible post text is sent through your local helper to TypeSafe for classification. The API key stays in the helper.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

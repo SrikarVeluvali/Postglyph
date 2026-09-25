@@ -1,0 +1,46 @@
+.postglyph-badge {
+  display: inline-flex !important;
+  box-sizing: border-box !important;
+  width: max-content !important;
+  min-width: 0 !important;
+  max-width: calc(100% - 16px) !important;
+  flex: none !important;
+  align-self: flex-start !important;
+  justify-self: start !important;
+  align-items: center;
+  margin: 7px 0 1px;
+  padding: 4px 8px;
+  border: 1px solid #a9d4dc;
+  border-radius: 999px;
+  background: #edf8fa;
+  color: #155e75;
+  font: 600 11px/1.2 Inter, Segoe UI, Arial, sans-serif !important;
+  letter-spacing: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.postglyph-badge[data-state="loading"] {
+  border-color: #d1dae0;
+  background: #f5f7f8;
+  color: #647782;
+}
+
+.postglyph-badge[data-state="uncertain"] {
+  border-color: #d8c6a2;
+  background: #fff8e9;
+  color: #715825;
+}
+
+.postglyph-badge[data-state="error"],
+.postglyph-badge[data-state="empty"] {
+  border-color: #d1dae0;
+  background: #f5f7f8;
+  color: #647782;
+}
+
+.postglyph-badge[hidden] {
+  display: none !important;
+}
